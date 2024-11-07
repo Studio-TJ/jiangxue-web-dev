@@ -19,5 +19,6 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           deploy_key: ${{ secrets.WEB_DEPLOY_KEY }}
+          cname: jiangxue-xu.com
           external_repository: Studio-TJ/jiangxue-web
           publish_dir: .
