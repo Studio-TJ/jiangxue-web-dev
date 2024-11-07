@@ -1,0 +1,23 @@
+name: Deploy Github Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          deploy_key: ${{ secrets.WEB_DEPLOY_KEY }}
+          external_repository: Studio-TJ/jiangxue-web
+          publish_dir: .
