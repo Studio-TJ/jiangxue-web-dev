@@ -1,0 +1,64 @@
+.header {
+    padding: 0px;
+    text-align: center;
+}
+
+.space-bar-48 {
+    height: 48px;
+}
+
+.fill-black {
+    background-color: #000;
+}
+
+.main-header {
+    height: 56px;
+}
+
+.menu-button {
+    fill-opacity: 0;
+    background: none;
+    padding: 16px 24px 8px 24px;
+    border: none;
+}
+
+.menu-button-text {
+    font-size: 20px;
+    line-height: 32px;
+    font-style: normal;
+    color: #FF453A;
+    font-family: 'Kirang Haerang';
+}
+
+.construction {
+    font-family: 'Kirang Haerang';
+    font-size: 32px;
+    line-height: 32px;
+    font-style: normal;
+    color: #000;
+    text-align: center;
+    margin-top: 408px;
+    margin-bottom: 846px;
+}
+
+.footer {
+    padding: 0px;
+    text-align: center;
+}
+
+.main-footer {
+    height: 140px;
+    background-color: #FF453A;
+}
+
+.footer-img {
+    padding-top: 28px;
+    padding-bottom: 8px;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-style: normal;
+    color: #FFF;
+    font-family: 'Kirang Haerang';
+}
