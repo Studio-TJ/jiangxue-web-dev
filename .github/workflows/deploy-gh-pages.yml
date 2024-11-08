@@ -22,3 +22,5 @@ jobs:
           cname: jiangxue-xu.com
           external_repository: Studio-TJ/jiangxue-web
           publish_dir: .
+          user-name: Studio-TJ-Github-Action[bot]
+          user-email:  info@studiotj.cc
