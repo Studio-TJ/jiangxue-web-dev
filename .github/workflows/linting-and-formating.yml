@@ -1,0 +1,22 @@
+name: Linting and Formatting
+
+on:
+  push:
+
+  pull_request:
+
+jobs:
+  linting:
+    name: Linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Lintting with SuperLint
+        uses: super-linter/super-linter@v7.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          config: .superlint.json
+          extensions: ts,tsx,js,jsx
+          ignore: node_modules,dist
+          fail_on_error: true
