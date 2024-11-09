@@ -16,5 +16,7 @@ jobs:
         uses: super-linter/super-linter@v7.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
-          FILTER_REGEX_INCLUDE: "^.*/.(html|css)$"
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_HTML: true
+          VALIDATE_CSS: true
 
