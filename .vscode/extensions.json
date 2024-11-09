@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "gruntfuggly.todo-tree",
+        "kevinkyang.auto-comment-blocks",
+        "github.vscode-github-actions",
+        "eamodio.gitlens",
+        "ecmel.vscode-html-css",
+        "jock.svg",
+        "stylelint.vscode-stylelint"
+    ]
+}
