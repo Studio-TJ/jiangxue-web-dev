@@ -6,6 +6,7 @@
         "eamodio.gitlens",
         "ecmel.vscode-html-css",
         "jock.svg",
-        "stylelint.vscode-stylelint"
+        "stylelint.vscode-stylelint",
+        "htmlhint.vscode-htmlhint"
     ]
 }
