@@ -16,8 +16,4 @@ jobs:
         uses: super-linter/super-linter@v7.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
-        with:
-          config: .superlint.json
-          extensions: ts,tsx,js,jsx
-          ignore: node_modules,dist
-          fail_on_error: true
+
