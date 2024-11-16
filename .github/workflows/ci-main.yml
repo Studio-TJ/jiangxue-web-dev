@@ -1,0 +1,20 @@
+name: CI on main
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  linting:
+    name: Linting
+    uses: ./.github/workflows/linting-and-formating.yml
+    secrets: inherit
+    with:
+      current_branch: ${{ github.head_ref || github.ref_name }}
+  deploy:
+    name: Deploy
+    needs: [linting]
+    uses: ./.github/workflows/deploy-gh-pages.yml
+    secrets: inherit
+

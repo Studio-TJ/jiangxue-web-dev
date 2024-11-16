@@ -1,11 +1,14 @@
 name: Linting and Formatting
 
 on:
-  push:
-    branches:
-      - '!template/*'
+  workflow_call:
+    inputs:
+      current_branch:
+        description: 'The current branch'
+        type: string
+        required: true
+        default: 'main'
 
-  pull_request:
 
 jobs:
   linting:
@@ -14,10 +17,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: echo "Current branch is ${{ inputs.current_branch }}"
       - name: Lintting with SuperLint
         uses: super-linter/super-linter@v7.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
+          DEFAULT_BRANCH: ${{ inputs.current_branch }}
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_HTML: true
           VALIDATE_CSS: true
