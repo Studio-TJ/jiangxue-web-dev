@@ -1,0 +1,16 @@
+name: CI on Branch and pull requests
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+
+jobs:
+  linting:
+    name: Linting
+    uses: ./.github/workflows/linting-and-formating.yml
+    secrets: inherit
+    with:
+      current_branch: ${{ github.head_ref || github.ref_name }}
+

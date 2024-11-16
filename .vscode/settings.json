@@ -2,4 +2,16 @@
     "css.validate": false,
     "less.validate": false,
     "scss.validate": false,
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "[github-actions-workflow]": {
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
 }
