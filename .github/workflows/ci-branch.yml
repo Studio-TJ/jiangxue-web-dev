@@ -2,8 +2,6 @@ name: CI on Branch and pull requests
 
 on:
   push:
-    branches:
-      - '!main'
 
 jobs:
   linting:
