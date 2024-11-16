@@ -2,6 +2,13 @@ name: Linting and Formatting
 
 on:
   workflow_call:
+    inputs:
+      current_branch:
+        description: 'The current branch'
+        type: string
+        required: true
+        default: 'main'
+
 
 jobs:
   linting:
@@ -14,6 +21,7 @@ jobs:
         uses: super-linter/super-linter@v7.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
+          DEFAULT_BRANCH: ${{ inputs.current_branch }}
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_HTML: true
           VALIDATE_CSS: true
