@@ -8,8 +8,8 @@ on:
 jobs:
   linting:
     name: Linting
-    uses: ./linting-and-formating.yml
+    uses: ./.github/workflows/linting-and-formating.yml
   deploy:
     name: Deploy
-    uses: ./deploy-gh-pages.yml
+    uses: ./.github/workflows/deploy-gh-pages.yml
 

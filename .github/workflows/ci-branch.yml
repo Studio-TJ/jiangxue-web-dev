@@ -8,5 +8,5 @@ on:
 jobs:
   linting:
     name: Linting
-    uses: ./linting-and-formating.yml
+    uses: ./.github/workflows/linting-and-formating.yml
 
