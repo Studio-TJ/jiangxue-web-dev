@@ -17,6 +17,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - run: echo "Current branch is ${{ inputs.current_branch }}"
       - name: Lintting with SuperLint
         uses: super-linter/super-linter@v7.1.0
         env:
