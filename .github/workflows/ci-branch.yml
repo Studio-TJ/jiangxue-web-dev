@@ -12,5 +12,5 @@ jobs:
     uses: ./.github/workflows/linting-and-formating.yml
     secrets: inherit
     with:
-      current_branch: ${{ github.head_ref }}
+      current_branch: ${{ github.head_ref || github.ref_name }}
 
