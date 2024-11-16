@@ -1,0 +1,15 @@
+name: CI on main
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  linting:
+    name: Linting
+    uses: ./linting-and-formating.yml
+  deploy:
+    name: Deploy
+    uses: ./deploy-gh-pages.yml
+

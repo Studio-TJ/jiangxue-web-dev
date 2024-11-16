@@ -1,0 +1,12 @@
+name: CI on Branch and pull requests
+
+on:
+  push:
+    branches:
+      - '!main'
+
+jobs:
+  linting:
+    name: Linting
+    uses: ./linting-and-formating.yml
+
