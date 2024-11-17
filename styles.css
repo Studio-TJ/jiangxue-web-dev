@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(229, 229, 229);
+}
+img {
+    width: 100%;
+    height: auto;
+  }
+
+h1, h2, h3 {
+    font-family: 'Noto Serif SC', serif;
+    margin-block: 8px;
+}
+
+  h1 {
+    font-size: 48pt;
+margin-block: 8px;
+text-align: center;
+  }
+
+  h2 {
+  font-size: 40pt;
+  }
+
+  h3 {
+  font-size: 24pt;
+  font-weight: 900;
+  }
+
+
+  .text-body {
+    font-family: Noto Serif SC;
+    font-size: 16pt;
+    font-weight: 400;
+    margin-block: 8px;
+  }
+
+  .button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: rgb(32, 32, 32);
+    padding: 15px 32px;
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Noto Serif SC;
+    font-size: 24px;
+    margin:16px;
+    display: inline-block;    
+  }
+  
+ .top-aligned {
+    vertical-align: top;
+ }
+  .menu {
+    width:40%;
+    /* overflow:auto; */
+    margin: 40px 40px;
+    padding: 20px 24px 80px;
+    background-color: white;
+    display: inline-block;
+    /* vertical-align: top; */
+  }
+
+  .dottedline {
+    border-top: 1px dashed ;
+  }
+
+  .warningcard {
+    display: inline-block;
+    width:400px;
+    /* height:240px; */
+    /* overflow:auto; */
+    margin: 40px 24px;
+    padding: 16px 40px 16px;
+    background-color: white;
+    display: inline-block;
+    outline: 2px solid black;
+text-align: center;
+  }
+
+  .yellowcard {
+    border-block: 12px solid #ECD347;
+  }
+
+  .redcard {
+    border-block: 12px solid #B13835;
+  }
+
+  .hazard {
+    display: inline-block;
+    width: 80px;
+  }
+
+  .center {
+    margin: auto;
+    width: 80%;
+    border: 1px solid rgb(39, 39, 39);
+    padding: 20px;
+  }
